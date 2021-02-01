@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+*{
+    box-sizing: border-box;
+  }
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: rgb(182, 50, 61);
+}
+
+.basicHead{
+  /* display: flex; */
+}
+h1{
+ 
+  font-size: 35px;
+  color: rgb(212,175,29);
+  border: solid white 2px;
+  padding: 10px;
+}
+h3{
+ 
+  border: solid white 2px;
+  font-size: 12px;
+  padding: 15px;
+}
+
+.icon{
+ flex-direction: row;
+ border: solid white 2px;
+}
+
+#type, #weight, #height{
+  border: solid white 2px;
+  padding: 15px;
+}
+
+.ability{
+  flex-direction:column;
+  border: solid white 2px;
+  
+}    
+#ability1, #ability2, #ability3{
+  padding: 15px;
+}
+
+  /* Does kebabcase don't work #ability-one, #ability-two, #ability-three {}
+  Why does .bioData not work?
+
+
+    /* mobile first - single column */
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 50px 30px auto 100px;
+    grid-template-areas: 
+      "hdr"
+      "ftr"
+      "content"
+      "side";
+  }  */

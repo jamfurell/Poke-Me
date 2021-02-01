@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+*{
+    box-sizing: border-box;
+  }
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: rgb(182, 50, 61);
+    display: grid; 
+    grid-template-columns: 2fr 2fr 6fr; 
+    grid-template-rows: 2fr 2fr 2fr 2fr ;
+    grid-template-areas: 
+    ". hdr hdr"
+    "profile profile data"
+    "profile profile moves"
+    "..."
+
+    ;
+}
+.basicHead{
+  grid-area: hdr;
+  justify-self: center;
+}
+h1{
+  grid-area: hdr;
+  font-size: 35px;
+  color: rgb(212,175,29);
+  border: solid white 2px;
+}
+h3{
+  grid-area: hdr;
+  border: solid white 2px;
+  font-size: 12px;
+}
+.icon{
+  grid-area: profile;
+}
+#type, #weight, #height{
+  grid-area: data;
+  border: solid white 2px;
+}
+.ability{
+  grid-area: moves;
+  border: solid white 2px;
+}    

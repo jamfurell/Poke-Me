@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+*{
+    box-sizing: border-box;
+  }
+.container{
+    font-family: 'Press Start 2P', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: beige;
+}
+
+.header{                 
+    display: flex;
+    flex-direction: column;
+    
+    width: 100vw;
+    height: 200px;
+    background-color: #659a67;
+    margin: 10px;
+    /* fix space on left side- header is shifted to the right */
+}
+    .title{
+        width: 100%;
+        height: 50%;
+        background-color: #4eb151;
+        text-align: center;
+        /* how to get the title in center of page */
+    }
+    .search{
+        width: 100%;
+        height: 50%;
+        background-color: #34cb39;
+        text-align: center;
+        
+    }
+
+.info{
+    display: flex;
+    width: 100vw;
+    height: 600px;
+    background-color: brown;
+}
+    .profile{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        height: 100%;
+        background-color: #619e97;
+    }
+        .name{
+            width: 100%;
+            height: 20%;
+            background-color: #36c9b8;
+                /* (how to add empty space on right side- between ..name and .data) */
+        }
+        .picture{
+            width: 100%;
+            height: 80%;
+            background-color: #11eed5;
+        }
+    .data-moves{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        height: 100%;
+        background-color: #8657a8;
+    }
+        .data{
+            width: 100%;
+            height: 50%;
+            background-color: #8c33cc;
+        }
+        .moves{
+            width: 100%;
+            height: 50%;
+            background-color: #c579fb;
+        }

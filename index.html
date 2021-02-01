@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Poke-Me</title>
+</head>
+
+<body>
+
+<div class="basicHead">
+<h1> Poke-Me</h1>
+<h3> Find your Pokemon!</h3>
+<input id= "nameSearch" type= "text" placeholder="Type Pokemon Name"></input>
+<button id= "findButton">Find</button>
+</div>
+
+<div class="icon">
+    <!-- data.species.name -->
+    <p id="pokemonName">Pokemon Name</p>    
+    <!-- data.sprites.front_default -->
+    <div id="photo"> <img src=""></div>
+</div>
+
+<p>Bio Data</p>
+<ul class="bioData">
+    <!-- data.types[i] -->
+    <li id="type">Type goes here</li>
+    <li id="weight">Weight goes here</li>
+    <!-- data.game_indices.height -->
+    <li id="height">Height goes here</li>   
+</ul>
+
+<p>Ability</p>
+<ul class="ability">
+    <!-- data.abilities[i].ability.name -->
+    <!-- <li id="ability1">Ability one goes here</li>
+    <li id="ability2">Ability two goes here</li>
+    <li id="ability3">Ability three goes here</li> -->
+    
+</ul>
+
+
+<script src="./js/main.js"></script>
+</body>
+</html>
