@@ -1,11 +1,11 @@
 //orig pokeApi site = "https://pokeapi.co/api/v2/pokemon"
 
 
-
+console.log("Bloody Mary")
 
 //create variable named button that selects button element stored in id# findButton
 const button= document.getElementById('findButton');
-let abilityClass= document.querySelector(".ability");
+let abilities_class= document.querySelector(".abilities");
 
 
 
@@ -20,25 +20,46 @@ function findPokemon(){
 console.log("findpokemon function is working")
 
 let userInput = document.getElementById('nameSearch')
-let pokemonName = userInput.value 
-let pokeApi = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
+let userPokemonName = userInput.value 
+let pokeApi = `https://pokeapi.co/api/v2/pokemon/${userPokemonName}`
 
 fetch(pokeApi)
     .then(function(dataRequest){
         return dataRequest.json();
     })
     .then(function(pokemonData){
-       while(abilityClass.firstChild){
-           abilityClass.removeChild(abilityClass.firstChild)
+        let name= pokemonData.name;
+        document.getElementById('nameId').innerText = name;
+      
+        let type= pokemonData.types[0].type.name;
+        document.getElementById('typeId').innerText= `Type: ` + type;
+
+        let height= pokemonData.height/10;
+        document.getElementById('heightId').innerText= `Height: ` + height + ` m`;
+
+        let weight= pokemonData.weight/10;
+        document.getElementById('weightId').innerText= `Weight: ` + weight + ` kg`;
+
+
+        while(abilities_class.firstChild){
+           abilities_class.removeChild(abilities_class.firstChild)
        }
-        console.log(pokemonData.abilities.length);
+        // console.log(pokemonData.abilities.length);
         let pokemonAbility=pokemonData.abilities;
+
         for(i=0; i<pokemonAbility.length; i++){
             let abilityLi= document.createElement('li'); 
             abilityLi.innerText = pokemonAbility[i].ability.name 
-            abilityClass.appendChild(abilityLi);
-            console.log(abilityLi)
+            abilities_class.appendChild(abilityLi);
+            // console.log(abilityLi)
         }
+
+    
+console.log(pokemonData.height)
+       console.log(`pokemon height is: `+ pokemonData.height)
+    //    console.log(`pokemon name is: ` + pokemonData.name)
+       console.log(`pokemon weight is: ` + pokemonData.weight)
+       console.log(`pokemon type is: ` + pokemonData.types[0].type.name)
     })
 }
 

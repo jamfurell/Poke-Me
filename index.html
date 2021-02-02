@@ -10,39 +10,61 @@
 
 <body>
 
-<div class="basicHead">
-<h1> Poke-Me</h1>
-<h3> Find your Pokemon!</h3>
-<input id= "nameSearch" type= "text" placeholder="Type Pokemon Name"></input>
-<button id= "findButton">Find</button>
-</div>
 
-<div class="icon">
-    <!-- data.species.name -->
-    <p id="pokemonName">Pokemon Name</p>    
-    <!-- data.sprites.front_default -->
-    <div id="photo"> <img src=""></div>
-</div>
+<div class="container">
 
-<p>Bio Data</p>
-<ul class="bioData">
-    <!-- data.types[i] -->
-    <li id="type">Type goes here</li>
-    <li id="weight">Weight goes here</li>
-    <!-- data.game_indices.height -->
-    <li id="height">Height goes here</li>   
-</ul>
+    <div class="header">
+        <div class="title">
+            <h1> Poke-Me</h1>
+        </div>
+        <div class="search">
+            <input id= "nameSearch" type= "text" placeholder="Type Pokemon Name"></input>
+            <button id= "findButton">Find</button>
+        </div>
+    </div>
 
-<p>Ability</p>
-<ul class="ability">
-    <!-- data.abilities[i].ability.name -->
-    <!-- <li id="ability1">Ability one goes here</li>
-    <li id="ability2">Ability two goes here</li>
-    <li id="ability3">Ability three goes here</li> -->
+    <div class="info">
+        <div class="profile">
+            <div class="nameClass">
+                <p id="nameId">Pokemon Name</p> 
+            </div>
+            <div class="picture">
+                <img id="pokemonpicture" src ="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png">
+            </div>
+        </div>
+        <div class="data-moves">
+            <div class="data">
+                <h3 id= "dataHead">Bio-Data</h3>
+                <p id= "typeId"></p>
+                <p id= "heightId"></p>
+                <p id= "weightId"></p>
+                <p id= "typeId"></p>
+            </div>
+
+            <div class="moves">
+                <h3 id="movesHead"> Abilties</h3>
+                <ul class="abilities">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
     
-</ul>
+</div>
 
 
 <script src="./js/main.js"></script>
 </body>
 </html>
+
+
+
+<!-- <p>Bio Data</p>
+<ul class="bioData">
+    <li id="type">Type goes here</li>
+    <li id="weight">Weight goes here</li>
+    <li id="height">Height goes here</li>   
+</ul> -->
+    <!-- data.types[i] --> <!-- data.game_indices.height -->
+
+    <!-- data.sprites.front_default --> <!-- data.species.name -->

@@ -1,53 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-
 *{
     box-sizing: border-box;
   }
 
-body {
-    height: 100vh;
-    margin: 0;
+.container{
     font-family: 'Press Start 2P', sans-serif;
-    background-color: rgb(182, 50, 61);
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: beige;
 }
 
-.basicHead{
-  /* display: flex; */
+.header{                 
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 200px;
+  background-color: #659a67;
+  margin: 10px 0 20px 0;
+
 }
-h1{
- 
-  font-size: 35px;
-  color: rgb(212,175,29);
-  border: solid white 2px;
-  padding: 10px;
+.title{
+    width: 100%;
+    height: 50%;
+    background-color: #4eb151;
+    text-align: center;
+    color: rgb(212,175,29);
+    font-size: 25px;
+    
 }
-h3{
- 
-  border: solid white 2px;
-  font-size: 12px;
-  padding: 15px;
+.search{
+    width: 100%;
+    height: 50%;
+    background-color: #34cb39;
+    text-align: center;
+    padding: 15px;
 }
 
-.icon{
- flex-direction: row;
- border: solid white 2px;
+.info{
+    display: flex;
+    width: 100vw;
+    height: 600px;
+    background-color: brown;
+    /* margin: 0 -10px 0 10px; */
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 600px;
+    background-color: #619e97;
+}
+.nameClass{
+    width: 100%;
+    height: 10%;
+    background-color: #36c9b8;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+        /* (how to add empty space on right side- between ..name and .data) */
+}
+.picture{
+    width: 60%;
+    height: 60%;
+    background-color: #11eed5;
+    border-radius: 150px;
+    margin: 10px 0 0 100px;
+    
 }
 
-#type, #weight, #height{
-  border: solid white 2px;
-  padding: 15px;
-}
-
-.ability{
-  flex-direction:column;
-  border: solid white 2px;
+#pokemonpicture{
+  height: 80%;
+  width: 60%;
   
-}    
-#ability1, #ability2, #ability3{
-  padding: 15px;
+    /* how to move image in center of .picture div */
 }
-
+.data-moves{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 600px;
+    background-color: #8657a8;
+}
+.data{
+    width: 100%;
+    height: 40%;
+    background-color: #8c33cc;
+    margin: 10px 0;    
+    padding-left: 20px;     
+      /* why does changing margin shift it to the right- so it sticks out of page window. */
+}
+.moves{
+  display: flex;
+  flex-direction: row;
+    width: 100%;
+    height: 60%;
+    background-color: #d051f0;
+    /* margin: 10px 0 10px 0;
+    padding-top: 20px; */
+}
+.base{
+  width:50%;
+  height: 50%;
+  background-color: #c570fb;
+}
+.special{
+  width:50%;
+  height: 50%;
+  background-color: #c570fb;
+}
+li{
+  margin: 16px; 
+}
+#dataHead{
+  margin: 10px -5px;
+}
+#specialHead{
+  margin: 10px 10px; 
+}
   /* Does kebabcase don't work #ability-one, #ability-two, #ability-three {}
   Why does .bioData not work?
 
