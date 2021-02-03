@@ -10,7 +10,7 @@
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    background-color: beige;
+    background-color: rgb(250,232,189);
    
 }
 
@@ -19,25 +19,30 @@
   flex-direction: column;
   width: 100vw;
   height: 200px;
-  background-color: #659a67;
-  margin: 10px 0 20px 0;
+  background: url(https://c4.wallpaperflare.com/wallpaper/309/93/127/pokemon-minimalistic-bulbasaur-pikachu-squirtle-sepia-backgrounds-charmander-starter-1920x1080-wa-anime-pokemon-hd-art-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 15px;
+
 
 }
 .title{
     width: 100%;
     height: 50%;
-    background-color: #4eb151;
+    /* background-color: #4eb151; */
     text-align: center;
     color: rgb(212,175,29);
     font-size: 25px;
+    margin: -26px auto; 
     
 }
 .search{
     width: 100%;
     height: 50%;
-    background-color: #34cb39;
+    /* background-color: #34cb39; */
     text-align: center;
-    padding: 15px;
+    /* padding: 45px; */
+    margin-top: 90px;
 }
 #nameSearch{
  padding: 8px;
@@ -52,23 +57,27 @@
     display: flex;
     width: 100vw;
     height: 600px;
-    background-color: brown;
-    /* margin: 0 -10px 0 10px; */
+    /* background-color: brown; */
+
 }
 .profile{
     display: flex;
     flex-direction: column;
     width: 40vw;
     height: 600px;
-    background-color: #619e97;
+    /* background-color: #619e97; */
 }
 .nameClass{
-    width: 100%;
+    width: 90%;
     height: 10%;
-    background-color: #36c9b8;
+    background-color: rgb(230,132,55,0.4);
+    border: 7px solid rgb(230,132,55,0.4);
+    border-radius: 20px;
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
+    margin: 0 auto;
+    color: rgba(180,14,27);
         /* (how to add empty space on right side- between ..name and .data) */
 }
 .picture{
@@ -76,9 +85,9 @@
     justify-content: center;
     width: 70%;
     height: 60%;
-    background-color: #11eed5;
+    background-color:rgb(250,241,190);
     border-radius: 150px;
-    margin: 0 auto;
+    margin: 10px auto;
     position: relative;
     /* transition: transform .9s; */
 }
@@ -95,7 +104,6 @@
   width: 100%;
   margin: auto;
   opacity: 0;
-
   transition: opacity 0.7s ease;
     /* how to move image in center of .picture div */
 }
@@ -113,15 +121,20 @@
     flex-direction: column;
     width: 60vw;
     height: 600px;
-    background-color: #8657a8;
+    /* background-color: #8657a8; */
     /* margin-left: 10px; */
 }
 .data{
     width: 100%;
     height: 40%;
-    background-color: #8c33cc;
-    /* margin: 10px 0;     */
-    padding-left: 10px;     
+    background-color: rgb(186,216,187,0.5);
+    border-color: rgb(156,190,107);
+    border-style: solid;
+    border-width: 7px;
+    border-radius: 20px;
+    /* margin-right: 10px;     */
+    padding-left: 10px; 
+    margin: 0 10px 10px 0;  
       /* why does changing margin shift it to the right- so it sticks out of page window. */
 }
 .moves{
@@ -129,20 +142,30 @@
   flex-direction: row;
   width: 100%;
   height: 60%;
-  background-color: red;
+  
+  /* background-color: red; */
     /* margin: 10px 0 10px 0;
     padding-top: 20px; */
 }
 .base{
   width:55%;
   /* height: 50%; */
-  background-color: #eb98c5;
+  background-color: rgb(186,216,187,0.5);
+  border-color: rgb(156,190,107);
+  border-style: solid;
+  border-width: 7px;
+  border-radius: 20px;
+  margin-right:10px;
   /* padding-left: 5px; */
 }
 .special{
   width:45%;
   /* height: 50%; */
-  background-color: #c570fb;
+  background-color: rgb(186,216,187,0.5);
+  border-color: rgb(156,190,107);
+  border-style: solid;
+  border-width: 7px;
+  border-radius: 20px;
   /* padding-left: 10px;
   padding-top: 10px; */
 }
