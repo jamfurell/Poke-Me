@@ -21,29 +21,30 @@ body {
 
     ;
 }
-.basicHead{
+.header{
   grid-area: hdr;
   justify-self: center;
 }
-h1{
+.title{
   grid-area: hdr;
   font-size: 35px;
   color: rgb(212,175,29);
   border: solid white 2px;
 }
-h3{
+.search{
   grid-area: hdr;
   border: solid white 2px;
   font-size: 12px;
 }
-.icon{
+
+.profile{
   grid-area: profile;
 }
-#type, #weight, #height{
+.data{
   grid-area: data;
   border: solid white 2px;
 }
-.ability{
+.moves{
   grid-area: moves;
   border: solid white 2px;
 }    

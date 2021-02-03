@@ -11,6 +11,7 @@
     width: 100vw;
     height: 100vh;
     background-color: beige;
+   
 }
 
 .header{                 
@@ -38,7 +39,15 @@
     text-align: center;
     padding: 15px;
 }
-
+#nameSearch{
+ padding: 8px;
+ border-radius: 5px;
+}
+#findButton{
+  padding: 3px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
 .info{
     display: flex;
     width: 100vw;
@@ -49,7 +58,7 @@
 .profile{
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 40vw;
     height: 600px;
     background-color: #619e97;
 }
@@ -63,62 +72,92 @@
         /* (how to add empty space on right side- between ..name and .data) */
 }
 .picture{
-    width: 60%;
+    display: flex;
+    justify-content: center;
+    width: 70%;
     height: 60%;
     background-color: #11eed5;
     border-radius: 150px;
-    margin: 10px 0 0 100px;
-    
+    margin: 0 auto;
+    position: relative;
+    /* transition: transform .9s; */
 }
-
-#pokemonpicture{
-  height: 80%;
-  width: 60%;
+#pokemonBack{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 10px;
+  margin: auto;
   
+}
+#pokemonFront{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  opacity: 0;
+
+  transition: opacity 0.7s ease;
     /* how to move image in center of .picture div */
 }
+#pokemonFront:hover{
+/* transform: scale(1.5); */
+  opacity: 1;
+}
+#pokemonBack:hover{
+  opacity: 0;
+
+}
+
 .data-moves{
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 60vw;
     height: 600px;
     background-color: #8657a8;
+    /* margin-left: 10px; */
 }
 .data{
     width: 100%;
     height: 40%;
     background-color: #8c33cc;
-    margin: 10px 0;    
-    padding-left: 20px;     
+    /* margin: 10px 0;     */
+    padding-left: 10px;     
       /* why does changing margin shift it to the right- so it sticks out of page window. */
 }
 .moves{
   display: flex;
   flex-direction: row;
-    width: 100%;
-    height: 60%;
-    background-color: #d051f0;
+  width: 100%;
+  height: 60%;
+  background-color: red;
     /* margin: 10px 0 10px 0;
     padding-top: 20px; */
 }
 .base{
-  width:50%;
-  height: 50%;
-  background-color: #c570fb;
+  width:55%;
+  /* height: 50%; */
+  background-color: #eb98c5;
+  /* padding-left: 5px; */
 }
 .special{
-  width:50%;
-  height: 50%;
+  width:45%;
+  /* height: 50%; */
   background-color: #c570fb;
+  /* padding-left: 10px;
+  padding-top: 10px; */
 }
 li{
-  margin: 16px; 
+  margin: 15px; 
+  margin-left: -5px;
 }
 #dataHead{
   margin: 10px -5px;
 }
+#baseHead{
+  margin: 10px 5px;
+}
 #specialHead{
-  margin: 10px 10px; 
+  margin: 10px 5px; 
 }
   /* Does kebabcase don't work #ability-one, #ability-two, #ability-three {}
   Why does .bioData not work?

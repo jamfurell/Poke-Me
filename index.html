@@ -18,8 +18,8 @@
             <h1> Poke-Me</h1>
         </div>
         <div class="search">
-            <input id= "nameSearch" type= "text" placeholder="Type Pokemon Name"></input>
-            <button id= "findButton">Find</button>
+            <input id="nameSearch" type="text" placeholder="Type Pokemon Name"></input>
+            <button id="findButton">Find</button>
         </div>
     </div>
 
@@ -29,23 +29,35 @@
                 <p id="nameId">Pokemon Name</p> 
             </div>
             <div class="picture">
-                <img id="pokemonpicture" src ="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png">
+                <img id="pokemonBack" src ="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/132.png">
+                <img id="pokemonFront" src ="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png">
             </div>
         </div>
+
         <div class="data-moves">
             <div class="data">
-                <h3 id= "dataHead">Bio-Data</h3>
-                <p id= "typeId"></p>
-                <p id= "heightId"></p>
-                <p id= "weightId"></p>
-                <p id= "typeId"></p>
+                <h3 id="dataHead">Bio-Data</h3>
+                <p id="typeId"></p>
+                <p id="heightId"></p>
+                <p id="weightId"></p>
+                <p id="typeId"></p>
             </div>
 
             <div class="moves">
-                <h3 id="movesHead"> Abilties</h3>
-                <ul class="abilities">
-                    
-                </ul>
+                <div class="base">
+                    <h3 id="baseHead"> Base Moves</h3>
+                    <ul class="baseMoves"></ul>
+                    <!-- <p id="hpId"></p>
+                    <p id="attackId"></p>
+                    <p id="defenseId"></p>
+                    <p id="specAttackId"></p>
+                    <p id="specDefenseId"></p>
+                    <p id="speedId"></p> -->
+                </div>
+                <div class="special">
+                    <h3 id="specialHead"> Abilties</h3>
+                    <ul class="specialAbilities"></ul>
+                </div>
             </div>
         </div>
     </div>
