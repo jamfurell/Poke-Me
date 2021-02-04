@@ -10,16 +10,18 @@ body {
     margin: 0;
     font-family: 'Press Start 2P', sans-serif;
     background-color: rgb(182, 50, 61);
-    display: grid; 
-    grid-template-columns: 2fr 2fr 6fr; 
-    grid-template-rows: 2fr 2fr 2fr 2fr ;
-    grid-template-areas: 
-    ". hdr hdr"
-    "profile profile data"
-    "profile profile moves"
-    "..."
-
-    ;
+    
+}
+.container{
+  display: grid; 
+  grid-template-columns: 2fr 2fr 6fr; 
+  grid-template-rows: 2fr 2fr 2fr 2fr ;
+  grid-template-areas: 
+  ". hdr hdr"
+  "profile profile data"
+  "profile profile moves"
+  ". . ."
+  ;
 }
 .header{
   grid-area: hdr;

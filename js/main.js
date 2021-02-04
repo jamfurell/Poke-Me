@@ -27,25 +27,13 @@ let userInput = document.getElementById('nameSearch')
 let userPokemonName = userInput.value 
 let pokeApi = `https://pokeapi.co/api/v2/pokemon/${userPokemonName}`
 
-
 fetch(pokeApi)
     .then(function(dataRequest){
         return dataRequest.json();
     })
     .then(function(pokemonData){
         console.log(pokemonData)
-        let name= pokemonData.name;
-        document.getElementById('nameId').innerText = name;
-      
-        let type= pokemonData.types[0].type.name;
-        document.getElementById('typeId').innerText= `Type: ` + type;
-
-        let height= pokemonData.height/10;
-        document.getElementById('heightId').innerText= `Height: ` + height + ` m`;
-
-        let weight= pokemonData.weight/10;
-        document.getElementById('weightId').innerText= `Weight: ` + weight + ` kg`;
-       
+        render(pokemonData);
         pokemonPicF.setAttribute('src', pokemonData.sprites.front_default);
         // Checking for url with correct pokemon picture console.log(pokemonData.sprites.front_default)
         pokemonPicB.setAttribute('src', pokemonData.sprites.back_default);
@@ -84,8 +72,19 @@ fetch(pokeApi)
     })
 }
 
+function render(data){
+        let name= data.name;
+        document.getElementById('nameId').innerText = name;
+      
+        let type= data.types[0].type.name;
+        document.getElementById('typeId').innerText= `Type: ` + type;
 
+        let height= data.height/10;
+        document.getElementById('heightId').innerText= `Height: ` + height + ` m`;
 
+        let weight= data.weight/10;
+        document.getElementById('weightId').innerText= `Weight: ` + weight + ` kg`;
+}
 
 
 

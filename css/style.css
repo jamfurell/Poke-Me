@@ -2,29 +2,35 @@
 
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
-
+body{
+  width: 100vw;
+  height: 100vh;
+}
 .container{
     font-family: 'Press Start 2P', sans-serif;
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(250,232,189);
-   
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(250,232,189); */
+    background-color: rgb(194,220,193);  
+    padding-top: 10px;
 }
-
 .header{                 
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   height: 200px;
   background: url(https://c4.wallpaperflare.com/wallpaper/309/93/127/pokemon-minimalistic-bulbasaur-pikachu-squirtle-sepia-backgrounds-charmander-starter-1920x1080-wa-anime-pokemon-hd-art-wallpaper-preview.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  margin: 15px;
-
-
+  /* border-radius: 160%; */
+  padding: 10px;
+  background-color: rgb(250,232,189);
+  border: 7px solid rgb(230,132,55,0.2);
 }
 .title{
     width: 100%;
@@ -33,8 +39,7 @@
     text-align: center;
     color: rgb(212,175,29);
     font-size: 25px;
-    margin: -26px auto; 
-    
+    margin: 0 0 10px 15px;  
 }
 .search{
     width: 100%;
@@ -42,10 +47,10 @@
     /* background-color: #34cb39; */
     text-align: center;
     /* padding: 45px; */
-    margin-top: 90px;
+    margin-top: 70px;
 }
 #nameSearch{
- padding: 8px;
+ padding: 6px;
  border-radius: 5px;
 }
 #findButton{
@@ -57,8 +62,10 @@
     display: flex;
     width: 100vw;
     height: 600px;
+    margin-top: 0;
+    padding-top: 20px;
+    border-top: 7px solid rgb(180, 219, 179);
     /* background-color: brown; */
-
 }
 .profile{
     display: flex;
@@ -77,6 +84,7 @@
     text-transform: uppercase;
     font-size: 20px;
     margin: 0 auto;
+    padding: 10px;
     color: rgba(180,14,27);
         /* (how to add empty space on right side- between ..name and .data) */
 }
@@ -85,7 +93,7 @@
     justify-content: center;
     width: 70%;
     height: 60%;
-    background-color:rgb(250,241,190);
+    /* background-color:rgb(250,241,190); */
     border-radius: 150px;
     margin: 10px auto;
     position: relative;
@@ -113,7 +121,6 @@
 }
 #pokemonBack:hover{
   opacity: 0;
-
 }
 
 .data-moves{
@@ -121,19 +128,18 @@
     flex-direction: column;
     width: 60vw;
     height: 600px;
+    color: rgb(59,103,53);
     /* background-color: #8657a8; */
-    /* margin-left: 10px; */
+    margin-right: 10px;
 }
 .data{
     width: 100%;
     height: 40%;
-    background-color: rgb(186,216,187,0.5);
-    border-color: rgb(156,190,107);
-    border-style: solid;
-    border-width: 7px;
+    /* background-color: rgb(186,216,187,0.5); */
+    border: 7px solid rgb(156,190,107);
     border-radius: 20px;
     /* margin-right: 10px;     */
-    padding-left: 10px; 
+    padding: 0px; 
     margin: 0 10px 10px 0;  
       /* why does changing margin shift it to the right- so it sticks out of page window. */
 }
@@ -151,37 +157,36 @@
   width:55%;
   /* height: 50%; */
   background-color: rgb(186,216,187,0.5);
-  border-color: rgb(156,190,107);
-  border-style: solid;
-  border-width: 7px;
+  border: 7px solid rgb(156,190,107);
   border-radius: 20px;
   margin-right:10px;
-  /* padding-left: 5px; */
+  padding-left: 5px;
 }
 .special{
   width:45%;
   /* height: 50%; */
   background-color: rgb(186,216,187,0.5);
-  border-color: rgb(156,190,107);
-  border-style: solid;
-  border-width: 7px;
+  border: 7px solid rgb(156,190,107);
   border-radius: 20px;
   /* padding-left: 10px;
   padding-top: 10px; */
 }
-li{
+li, #typeId, #heightId, #weightId{
   margin: 15px; 
-  margin-left: -5px;
+  list-style-type: none;
 }
-#dataHead{
-  margin: 10px -5px;
+#dataHead, #baseHead, #specialHead{
+  margin: 10px 5px;
 }
-#baseHead{
+
+
+
+/* #baseHead{
   margin: 10px 5px;
 }
 #specialHead{
   margin: 10px 5px; 
-}
+} */
   /* Does kebabcase don't work #ability-one, #ability-two, #ability-three {}
   Why does .bioData not work?
 
