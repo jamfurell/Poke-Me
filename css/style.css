@@ -111,18 +111,10 @@ body{
   height: 100%;
   width: 100%;
   margin: auto;
-  opacity: 0;
+  /* opacity: 0; */
   transition: opacity 0.7s ease;
     /* how to move image in center of .picture div */
 }
-#pokemonFront:hover{
-/* transform: scale(1.5); */
-  opacity: 1;
-}
-#pokemonBack:hover{
-  opacity: 0;
-}
-
 .data-moves{
     display: flex;
     flex-direction: column;
@@ -178,7 +170,12 @@ li, #typeId, #heightId, #weightId{
 #dataHead, #baseHead, #specialHead{
   margin: 10px 5px;
 }
-
+.show{
+  opacity: 1;
+}
+.hide{
+  opacity: 0;
+}
 
 
 /* #baseHead{

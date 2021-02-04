@@ -46,10 +46,8 @@ fetch(pokeApi)
            let baseStat= pokemonData.stats[i].base_stat;
            let baseType= pokemonData.stats[i].stat.name;
         //    string cap= baseType.substring(0,1).toUpperCase() + baseType.string(1)
-       baseTypeCap= baseType.substring(0,1).toUpperCase + baseType.substring(1);
-        console.log(baseTypeCap); 
-
-
+    //    baseTypeCap= baseType.substring(0,1).toUpperCase + baseType.substring(1);
+    //     console.log(baseTypeCap); 
             let baseLi= document.createElement('li');
             baseLi.innerText = baseType + ": " + baseStat;
             base_class.appendChild(baseLi);
@@ -90,6 +88,20 @@ function render(data){
 
 button.addEventListener('click', findPokemon)
 
+
+document.querySelector('.picture').addEventListener('mouseover', ()=>{
+   
+    document.getElementById('pokemonFront').classList.add('show');
+    document.getElementById('pokemonFront').classList.remove('hide');
+    document.getElementById('pokemonBack').classList.add('hide');
+})
+document.querySelector('.picture').addEventListener('mouseout', ()=>{
+
+    document.getElementById('pokemonFront').classList.add('hide');
+    document.getElementById('pokemonFront').classList.remove('show');
+    document.getElementById('pokemonBack').classList.add('show');
+    document.getElementById('pokemonBack').classList.remove('hide');
+})
 
 
 // for (i=0;i<pokemonData.length; i++){
