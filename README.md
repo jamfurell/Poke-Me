@@ -1,6 +1,8 @@
 # POKE-ME 
 Do you ever wonder how tall a pokemon is in real life? Or are you planning on battling with someone and want to find out the movesets of your opponent's pokemon? If you are, **Poke-Me** is perfect for users like you! 
 
+### Preview
+
 ### Project Overview 
 **Poke-Me** is created for users to easily search and find basic information about a specific pokemon. It is modeled after the *Pokedex* that users can find inside the Pokemon game. A *Pokedex* is a directory containing multiple details about the pokemon; i.e. their height, weight, attack moves and etc. 
 Using the PokemonAPI ([click here for the link to the PokemonAPI!](https://pokeapi.co/)), **Poke-Me** fetches data and uses DOM manipulation to display the relevant information about a pokemon's profile. The specific type of information shown upon search is described further in details below. 
