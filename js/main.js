@@ -46,6 +46,9 @@ fetch(pokeApi)
             special_class.appendChild(specialLi);
         }
     })
+    .catch(error => {
+        console.log("There's an error")
+    })
 }
 
 function render(data){
