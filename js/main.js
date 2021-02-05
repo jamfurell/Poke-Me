@@ -10,7 +10,7 @@ let base_class = document.querySelector('.baseMoves')
 
 
 function findPokemon(){
-console.log("findpokemon function is working")
+// console.log("findpokemon function is working")
 
 let userInput = document.getElementById('nameSearch')
 let userPokemonName = userInput.value 
