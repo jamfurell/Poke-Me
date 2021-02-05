@@ -24,3 +24,7 @@ Basic statistics will include:
 *Speed of pokemon 
 
 ### Original Wireframe
+
+### Arising Problems
+The first issue that came up was taking the user input (a specific pokemon's name) and using the PokeAPI to fetch information for that specific pokemon. The issue was resolved by using string interpolation to take the user input and adding that to the end of the API endpoint to fetch the relevant information.
+Another hurdle that was difficult to overcome was placing pictures and attempting to style it. A issue arose when CSS styling was used to change a style of a picture upon an event. Eventually, javascript was used to successfully apply changes to a picture with an event listener. 
