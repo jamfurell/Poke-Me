@@ -11,20 +11,21 @@ Using the PokemonAPI ([click here for the link to the PokemonAPI!](https://pokea
 **Poke-Me** will include a search and find function located at the header of the page. Upon entering a pokemon's name, the site will display the pokemon's name and picture on the left side of the page. A feature that was added to the pokemon's picture was to show the picture of the front-facing side of the pokemon when a user hovers over the picture. On the right side of the page, the searched pokemon's biological data, basic statistics and special abilities used by that pokemon. 
 
 Biological data will include: 
-*Type of pokemon 
-*Height of pokemon
-*Weight of pokemon
+- Type of pokemon 
+- Height of pokemon
+- Weight of pokemon
 
 Basic statistics will include:
-*Hp of pokemond
-*Attack of pokemond
-*Defense of pokemon
-*Special-attack of pokemon
-*Special-defense of pokemon
-*Speed of pokemon 
+- Hp of pokemond
+- Attack of pokemond
+- Defense of pokemon
+- Special-attack of pokemon
+- Special-defense of pokemon
+- Speed of pokemon 
 
 ### Original Wireframe
 
 ### Arising Problems
 The first issue that came up was taking the user input (a specific pokemon's name) and using the PokeAPI to fetch information for that specific pokemon. The issue was resolved by using string interpolation to take the user input and adding that to the end of the API endpoint to fetch the relevant information.
-Another hurdle that was difficult to overcome was placing pictures and attempting to style it. A issue arose when CSS styling was used to change a style of a picture upon an event. Eventually, javascript was used to successfully apply changes to a picture with an event listener. 
+Another hurdle that was difficult to overcome was placing pictures and attempting to style it. A issue arose when CSS styling was used to change a style of a picture upon an event. Instead of CSS, javascript was used to successfully apply changes to a picture with an event listener. 
+A problem to work on is changing the styling to accomadate smaller screen sizes. 
