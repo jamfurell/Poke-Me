@@ -66,8 +66,8 @@ function render(data){
 }
 
 
-
 button.addEventListener('click', findPokemon)
+
 
 
 document.querySelector('.picture').addEventListener('mouseover', ()=>{
