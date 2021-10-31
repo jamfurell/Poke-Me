@@ -1,59 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 *{
+  /* Display and Box Model  */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   }
 body{
+  /* Display and Box Model  */
   width: 100vw;
   height: 100vh;
 }
 .container{
-  font-family: 'Press Start 2P', sans-serif;
-  display: flex;
-  flex-direction: column;
+  /* Display and Box Model  */
   width: 100%;
   height: 100%;
-  background-color: rgb(194,220,193);  
-  padding-top: 10px;
-}
-.header{                 
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
+  
+  /* Text  */
+  font-family: 'Press Start 2P', sans-serif;
+  
+  /* Color  */
+  background-color: rgb(194,220,193);  
+}
+.header{                 
+  /* Display and Box Model  */
   width: 100%;
   height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 7px solid rgb(230,132,55,0.2);
+  
+  
+  /* Visual  */
   background: url(https://c4.wallpaperflare.com/wallpaper/309/93/127/pokemon-minimalistic-bulbasaur-pikachu-squirtle-sepia-backgrounds-charmander-starter-1920x1080-wa-anime-pokemon-hd-art-wallpaper-preview.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  padding: 10px;
   background-color: rgb(250,232,189);
-  border: 7px solid rgb(230,132,55,0.2);
 }
 .title{
+  /* Display and Box Model  */
   width: 100%;
   height: 50%;
-  text-align: center;
-  color: rgb(212,175,29);
-  font-size: 25px;
   margin: 0 0 10px 15px;  
+
+  /* Text */
+  text-align: center;
+  font-size: 25px;
+
+   /* Color  */
+  color: rgb(212,175,29);
 }
 .search{
+  /* Display and Box Model  */
   width: 100%;
   height: 50%;
-  text-align: center;
   margin-top: 70px;
+
+  /* Text  */
+  text-align: center;
 }
 #nameSearch{
- padding: 6px;
- border-radius: 5px;
+  /* Display and Box Model  */
+  padding: 6px;
+  border-radius: 5px;
 }
 #findButton{
+  /* Display and Box Model  */
   padding: 3px;
   padding-right: 15px;
   padding-left: 15px;
 }
 .info{
+  /* Display and Box Model  */
   display: flex;
   width: 100vw;
   height: 600px;
@@ -61,59 +83,81 @@ body{
   padding-top: 20px;
   border-top: 7px solid rgb(180, 219, 179);
 }
+
 .profile{
-  display: flex;
-  flex-direction: column;
+  /* Display and Box Model  */
   width: 40vw;
   height: 600px;
+  display: flex;
+  flex-direction: column;
 }
 .nameClass{
+  /* Display and Box Model  */
   width: 90%;
   height: 10%;
-  background-color: rgb(230,132,55,0.4);
   border: 7px solid rgb(230,132,55,0.4);
   border-radius: 20px;
+  margin: 0 auto;
+  padding: 10px;
+  
+  /* Text  */
   text-align: center;
   text-transform: uppercase;
   font-size: 20px;
-  margin: 0 auto;
-  padding: 10px;
+  
+  /* Color  */
   color: rgba(180,14,27);
+  
+  /* Visual  */
+  background-color: rgb(230,132,55,0.4);
 }
 .picture{
+  /* Display and Box Model  */
   display: flex;
   justify-content: center;
   width: 70%;
   height: 60%;
   border-radius: 150px;
   margin: 10px auto;
+  
+  /* Positioning  */
   position: relative;
 }
 #pokemonBack{
+  /* Positioning  */
   position: absolute;
+  top: 10px;
+
+  /* Display and Box Model  */
   height: 100%;
   width: 100%;
-  top: 10px;
   margin: auto;
   border-radius: 100%;
   
 }
 #pokemonFront{
-  height: 100%;
+  /* Display and Box Model  */
   width: 100%;
+  height: 100%;
   margin: auto;
-  transition: opacity 0.7s ease;
   border-radius: 100%;
+  
+  /* Visual  */
+  transition: opacity 0.7s ease;
 }
 .data-moves{
+  /* Display and Box Model  */
   display: flex;
   flex-direction: column;
   width: 60vw;
   height: 600px;
-  color: rgb(59,103,53);
   margin-right: 10px;
+  
+  /* Color  */
+  color: rgb(59,103,53);
 }
 .data{
+  /* Display and Box Model  */
   width: 100%;
   height: 40%;
   border: 7px solid rgb(156,190,107);
@@ -128,20 +172,27 @@ body{
   height: 60%;
 }
 .base{
+  /* Display and Box Model  */
   width:55%;
-  background-color: rgb(186,216,187,0.5);
   border: 7px solid rgb(156,190,107);
   border-radius: 20px;
   margin-right:10px;
   padding-left: 5px;
+  
+  /* Visual  */
+  background-color: rgb(186,216,187,0.5);
 }
 .special{
+  /* Display and Box Model  */
   width:45%;
-  background-color: rgb(186,216,187,0.5);
   border: 7px solid rgb(156,190,107);
   border-radius: 20px;
+  
+  /* Visual  */
+  background-color: rgb(186,216,187,0.5);
 }
 li, #typeId, #heightId, #weightId{
+  /* Display and Box Model  */
   margin: 15px; 
   list-style-type: none;
 }
@@ -157,65 +208,79 @@ li, #typeId, #heightId, #weightId{
 
 @media screen and (max-width:450px){
   *{
+    /* Display and Box Model  */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    }
+  }
   body{
+    /* Display and Box Model  */
+    width: 100%;
+    height: 100%;
     margin:0;
     padding: 0;
     border: 0;
     outline: 0;
-    width: 100%;
-    height: 100%;
   }
   .title{
     font-size: 20px;
   }
   .info{
-    display: flex;
-    flex-direction: column;
+    /* Display and Box Model  */
     width: 100vw;
     height: 900px;
+    display: flex;
+    flex-direction: column;
     padding-top: 10px;
   }
   .profile{
-    display: flex;
-    flex-direction: column;
+    /* Display and Box Model  */
     width: 70vw;
     height: 30%;
+    display: flex;
+    flex-direction: column;
     margin-left: 50px;
-    /* background-color: white; */
-    }
+  }
   .nameClass{
+    /* Display and Box Model  */
     height: 30%;
+    
+    /* Text  */
     font-size: 16px;
+    
+    /* Color  */
     color: rgb(143, 37, 46);
   }
   .picture{
+    /* Display and Box Model  */
     width: 60%;
     height: 150px;
     margin: 0 50px 10px 50px;
   }
   .data-moves{
+    /* Display and Box Model  */
     width: 80vw;
     height: 80%;
     margin-left: 40px;
   }
   .data{
+    /* Display and Box Model  */
     padding-left: 5px; 
-   height: 30%;
+    height: 30%;
   }
   .moves{
+    /* Display and Box Model  */
     height: 500px;
     display: flex;
     flex-direction: column;
   }
   .base{
+    /* Display and Box Model  */
     width:100%;
     margin-bottom: 10px;
   }
   .special{
+    /* Display and Box Model  */
     width:100%;
     padding: 5px;
     border-radius: 20px;

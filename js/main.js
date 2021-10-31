@@ -72,15 +72,15 @@ button.addEventListener('click', findPokemon)
 
 document.querySelector('.picture').addEventListener('mouseover', ()=>{
    
-    document.getElementById('pokemonFront').classList.add('show');
-    document.getElementById('pokemonFront').classList.remove('hide');
-    document.getElementById('pokemonBack').classList.add('hide');
+    document.getElementById("pokemonBack").classList.add("show");
+    document.getElementById("pokemonBack").classList.remove("hide");
+    document.getElementById("pokemonFront").classList.add("hide");
 })
 document.querySelector('.picture').addEventListener('mouseout', ()=>{
 
-    document.getElementById('pokemonFront').classList.add('hide');
-    document.getElementById('pokemonFront').classList.remove('show');
-    document.getElementById('pokemonBack').classList.add('show');
-    document.getElementById('pokemonBack').classList.remove('hide');
+    document.getElementById("pokemonBack").classList.add("hide");
+    document.getElementById("pokemonBack").classList.remove("show");
+    document.getElementById("pokemonFront").classList.add("show");
+    document.getElementById("pokemonFront").classList.remove("hide");
 })
 
